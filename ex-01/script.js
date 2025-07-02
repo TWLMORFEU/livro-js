@@ -5,7 +5,7 @@ const menoscasa = (numero - 1);
 const maiscasa = (numero + 1);
 alert(`antecessor - ${menoscasa} - ${numero} - sucessor ${maiscasa}`);
 
-/* atividade 02 - elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e  infrome o valor a ser pagopor cliente.*/
+/* atividade 02 - elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e  informe o valor a ser pagopor cliente.*/
 
 const Conta =  Number(prompt("Valor gasto: "));
 const Nclientes =  Number(prompt("Quantidade de pessoas: "));
