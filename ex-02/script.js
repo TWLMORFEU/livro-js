@@ -62,3 +62,37 @@ ou
 obs: se o programa trabalhar com o mesmo elemento mais de uma vez, é recomendado armazenar a localizção dele em uma variável exemplo (de duas linhas)
 */
 
+/* 
+
+--- Introdução de veneto e funções ---
+
+- para determinar um evento após um click no botão submit por exemplo, e logoo em seguida um função de seta com os comandos a serem executados logo em seguida
+
+exemplo: 
+
+frm.addeventListener("submit", (e) => { comando })
+
+- este "e" representa o evento que oorreu ( nesse caso o envio de formulário), entretanto é de suma importância ser tratado um nome descitivo no lugar do "e" para que a interpretação seja mais fluida.
+- qualquer nome dará a mesma funcionalidade, o que vale é a posição neste caso, por isso é bom nomes semânticos
+
+- e este "e"  e.preventdefault() -> eita que o formulário recarregue 
+
+*/
+
+
+/*
+--- propriedades innerText, innerHTML e value ---
+
+-- innerText -> obtem ou altera o texto exibido por elementos por elementos HTMl, como parágrafos(p), cabeçalhos(h1,h2...) ou containers(span,div) MODIFICA APENAS O TEXTO VISÍVEL
+
+-- innerHTML -> obtem ou altera o conteúdo de elementos HTMl como parágrafos (p), cabeçalhos (h1,h2...) ou containers (span,div). Códigos HTML presentes no conteúdo são renderizados pelo navegador
+MODIFICA TODO O CONTEÚDO JUNTO COM AS TAGS HTML
+
+-OBS - innerHTML pode apresentar algum risco relacionado à segurança de dados em paginas web, denominado como XSS, para evitar é necessário filtrar os dados de entrada de um site,
+-- CASO O CONTEÚDO A SER EXIBIDO A PÁGINA PELO PROGRAMA NÃOCONTENHA DADOS INFORMADOS PELO USUÁRIO, NÃO HÁ RISCOS EM UTILIZAR -- 
+
+-- value -> obtem ou altera o conteúdo de campos de formulário
+
+
+innerText pode ser substituido tambem por -> textContent ou outerText
+*/
