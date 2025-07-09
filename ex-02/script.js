@@ -34,3 +34,31 @@ frm.addEventListener("submit", (e) => {
 
 */
 
+
+/*
+
+- const resp = document.querySelector("h3") -> primeiro elemento h3 da página
+
+- const cor = document.queryselector("#inCor") -> elemento com id = inCor
+
+- const lista = document.querySelector(".lista") -> elemento da class = lista
+
+----------
+- - querySelector() -> Referencia ampla ao elemento destinado, entratanto em versões de navegadores antigos não ira ser suportado, para resolver a acessibilidade para as versões antigas teria que utilizar os transpiladors de código, que converterá o código para instruções necessárias para esses navegadores. 
+
+- - querySelectorById() -> Referencia mais objetiva, destinada ao elemento id específico dentro do código
+
+*/
+
+/*
+podemos armazenar a referência a um elemento em uma variável
+
+- Const frm = document.quaeyselector("form")
+- Const nome = frm.inNome.value
+
+ou 
+
+- const nome = document.querySelector("form").inNome.value
+obs: se o programa trabalhar com o mesmo elemento mais de uma vez, é recomendado armazenar a localizção dele em uma variável exemplo (de duas linhas)
+*/
+
