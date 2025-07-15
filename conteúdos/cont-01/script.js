@@ -21,6 +21,8 @@ Adição + e Subtração -
 
 Também com mesma prioridade, e da esquerda para a direita.
 
+------ Funções matemáticas com Math ------
+
 Math.sqrt(x)
 Retorna a raiz quadrada de x.
 Exemplo: Math.sqrt(9) → 3
