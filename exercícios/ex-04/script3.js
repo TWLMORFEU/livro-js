@@ -4,19 +4,21 @@ C) UM SUPERMERCADO ESTÁ COM UMA PROMOÇÃO - Para aumentar suas vendas no setor
 
 
 const inf = document.querySelector("form");
-const resp = document.querySelector("h3");
-const resp2 = document.querySelector("h2");
+const resp = document.querySelector("h2");
+const resp2 = document.querySelector("h3");
 
 inf.addEventListener("submit", (e) => {
 
     let produto = inf.iproduto.value;
-    let preco = inf.produto.value
+    let preco = inf.ivalor.value
 
     const metade = preco / 2 
 
     const triple = (preco * 3) - metade;
 
-    resp.innerText = `Creme Dental - Promoção: Leve 3 por R$ ${triple} `;
-    resp.innerText = `O terceiro produto custa apenas R$ ${metade}`;
-    e.preventDefault
+    resp.innerText = ` ${produto} - Promoção: Leve 3 por R$: ${triple.toFixed(2)} `;
+
+    resp2.innerText = `O terceiro produto custa apenas R$: ${metade.toFixed(2)}`;
+
+    e.preventDefault()
 })
