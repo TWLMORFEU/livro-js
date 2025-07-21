@@ -1,5 +1,5 @@
 /*
-C) Elaborar um programa para um restaurante que leia o preço por kg e o consumo (em gramas) de um cliente. Exiba o valor a ser pago, conforme ilu
+C) Elaborar um programa para um restaurante que leia o preço por kg e o consumo (em gramas) de um cliente. Exiba o valor a ser pago.
 */
 
 // cria referência ao form e ao elemento h3 ( onde será exibida a resposta)
