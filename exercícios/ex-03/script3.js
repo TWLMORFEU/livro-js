@@ -14,5 +14,5 @@ frm.addEventListener("submit", (e) => {
     const valor = (quilo / 1000) * Consumo // calcula valor a ser pago
     resp.innerText = `Valor a pagar R$: ${valor.toFixed(2)}` // Exibe resposta
 
-    e.preventDefault // evita o envio do formulario
+    e.preventDefault() // evita o envio do formulario
 })
