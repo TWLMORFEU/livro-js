@@ -1,6 +1,9 @@
+// Se é par ou ímpar
+
 const prompt = require("prompt-sync")();
 
-const numU = prompt(Number(console.log('Digite um número: ')));
+const numU = Number(prompt('Digite um número: '));
+
 console.log(`Vamos avaliar se ${numU} é par ou ímpar!`);
 
 if (numU % 2 === 0) {
