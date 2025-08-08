@@ -9,7 +9,7 @@ const resp = document.querySelector("h3");
 
 //"ouvinte" de veneto, acionado quando o botão submit for clicado
 frm.addEventListener("submit", (e) => {
-   e.preventDefault      // Evita o envio do form
+   e.preventDefault()     // Evita o envio do form
 
    // obtém e converte o conteúdo do campo inHorarioBrasil
    const horaBrasil = Number(frm.inHoraBrasil.value);
