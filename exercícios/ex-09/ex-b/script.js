@@ -22,5 +22,5 @@ frm.addEventListener("submit", (e) => {
         re = "Multa Grave"
     }
 
-    resp.innerText = `Situação: $`;
+    resp.innerText = `Situação: ${re}`;
 })
