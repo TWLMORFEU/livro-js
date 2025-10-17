@@ -10,13 +10,20 @@
     <h1>Programa Contas do Mês</h1>
     <form>
         <p>Descrição da Conta: 
-            <input type="text" id="iDescrição" required>
+            <input type="text" id="iDescricao" required>
         </p>
+
         <p>Valor a Pagar R$:
-            <input type="number" id="iValor" required>
+            <input type="number" id="iValor" min="0" step="0.01" required>
         </p>
+
+
         <input type="submit" value="Registrar Conta">
+
     </form>
     
+    <pre id="outResp1"></pre>
+    <pre id="outResp2"></pre>
+    <script src="script.js"></script>
 </body>
 </html>
