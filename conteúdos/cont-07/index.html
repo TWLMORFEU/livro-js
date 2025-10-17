@@ -6,12 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="ola"></h1>
 
-    <script>
-        let nome = "Eduardo"
-        document.getElementById("ola").textContent = `Olá ${nome}`
-        // pega um elemento e  transforma o texto dele
-    </script>
+    <h1>Programa Contas do Mês</h1>
+    <form>
+        <p>Descrição da Conta: 
+            <input type="text" id="iDescrição" required>
+        </p>
+        <p>Valor a Pagar R$:
+            <input type="number" id="iValor" required>
+        </p>
+        <input type="submit" value="Registrar Conta">
+    </form>
+    
 </body>
 </html>
