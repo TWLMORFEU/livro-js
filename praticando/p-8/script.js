@@ -5,8 +5,8 @@ const altura = Number(prompt("Determine sua altura atual: "));
 
 
 function cal(peso, altura) {
-    const imc = peso / (altura * altura);   
-    return imc
+  const imc = peso / (altura * altura);   
+  return imc
 }
 
 const imc = cal(peso, altura)
