@@ -1,3 +1,5 @@
+// Gerador de senhas aleatórias
+
 function gerarSenha(tamanho) {
     const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const letrasMinusculas = 'abcdefghjklmnopqrstuvwxyz';
