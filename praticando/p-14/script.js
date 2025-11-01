@@ -1,24 +1,19 @@
-function gerarSenha(tamanho) {
-    const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const letrasMinusculas = 'abcdefghjklmnopqrstuvwxyz';
-    const numeros = '0123456789';
-    const simbolos = '!@#$%^&*()-_=+[]{};:.<>?';
+function gerarNumeroTelefone() {
 
+   const numeros = '0123456789'
 
-    const tudoJunto = letrasMaiusculas + letrasMinusculas + numeros + simbolos;
+   let num = '';
 
-    let senha = '';
+   for(let i = 0; i < 4; i++) {
+      const geradorAleatorio = Math.floor(Math.random() * numeros.length);
 
-
-    for (let i = 0; i < tamanho; i++) {
-        const indiceAleatorio = Math.floor(Math.random() * tudoJunto.length);
-        senha += tudoJunto[indiceAleatorio];
-        // Adicione à variável senha o caractere aleatório escolhido de tudoJunto.
+      num += numeros[geradorAleatorio]
     }
 
-    return senha;
- 
+    return num 
 };
- 
 
-console.log('Senha de 19 caracteres', gerarSenha(19));
+const num1 = gerarNumeroTelefone();
+const num2 = gerarNumeroTelefone();
+
+console.log(`(31) ${num1}-${num2}`)
