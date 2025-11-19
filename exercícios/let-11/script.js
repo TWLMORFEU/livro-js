@@ -1,3 +1,4 @@
+//Contador
 
 var createCounter = function(n) {
     n--;
