@@ -4,7 +4,7 @@
 const prompt = require("prompt-sync")()
 const produto = prompt("Produto: ") // Lê o nome do produto e ... 
 const num = Number(prompt("N de etiquetas: ")) // quantidade de etiquetas
-// Cria um laço de repetição até num/2 9pois imprime2 etiquetas por linha
+// Cria um laço de repetição até num/2 (pois imprime 2 etiquetas por linha)
 for (let i = 1; i <= num / 2; i++) {
     console.log(`${produto.padEnd(30)} ${produto.padEnd(30)}`)
 }
