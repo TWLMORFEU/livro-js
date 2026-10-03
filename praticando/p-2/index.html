@@ -15,20 +15,16 @@
     </style>
 
     <script>
-        const nomeUsuario = Text(window.prompt("Qual seu nome ?"))
-        window.alert("É um prazer conhecelo" + nomeUsuario)
+        const nomeUsuario = window.prompt("Qual seu nome ?")
+        window.alert("É um prazer conhecelo," + nomeUsuario)
 
         /* Exemplo  simples de numero inteiro e real utilizando NUmber.parseInt(n) -> inteiro e Number.parseFloat -> Real */
 
-        let idadeInicio = Number(parseFloat(window.prompt("Qual idade iníciou em tecnologia ?")));
+        let idadeInicio = Number.parseFloat(window.prompt("Qual idade iníciou em tecnologia ?"));
 
-        let idadeFinal = Number(parseFloat(window.prompt("Qual idade chegou a finalizar seu periodo de conclusão escolar ?")),
+        let idadeFinal = Number.parseFloat(window.prompt("Qual idade chegou a finalizar seu periodo de conclusão escolar ?"));
 
-        Window.alert("Sua idade de ínicio, + a de conclusão escolar, esta de: ", idadeInicio + idadeInicio)
-
-
-    
-    )
+        window.alert("Sua idade de ínicio, + a de conclusão escolar, esta de: " + (idadeInicio + idadeFinal));
     </script>
 
 </body>
