@@ -25,3 +25,16 @@ var c = 5 * b ** 2       [45]
 var d = 10 - a / 2       [6]
 var e = 6 * 2 / d        [2]
 var f = b % e + 4 / e    [3]
+
+
+
+
+auto - atribuições 
+
+var n = 3     [3]      Pode usar também ---->       n+=4, n-=5, n*=4...
+n = n + 4     [7]      porém, des que seja a mes-
+n = n - 5     [2]      ma variável recebendo ela 
+n = n * 4     [8]      mesma.
+n = n / 2     [4]
+n = n ** 2    [16]
+n = n % 5     [1]
