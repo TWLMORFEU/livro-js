@@ -1,0 +1,11 @@
+Operadores Lógicos 
+
+
+Igual -> ==
+atribuicão -> = 
+concatenacão (type string) -> +
+adicão (type number) -> +
+Multiplicacão -> *
+subtracão -> -
+divisor de numeros inteiros ate que sobre UM -> %
+Elevado -> **
