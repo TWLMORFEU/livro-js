@@ -38,3 +38,15 @@ n = n * 4     [8]      mesma.
 n = n / 2     [4]
 n = n ** 2    [16]
 n = n % 5     [1]
+
+
+
+operadores de incremento
+
+n ++
+n --
+
+e em programação avançada 
+
+-- n 
+++ n
