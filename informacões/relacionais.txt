@@ -1,0 +1,25 @@
+Relacionais 
+
+5 > 2 -> true    (Maior que)
+7 < 4 -> false   (Menor que)
+8 >= 8 -> true   (Maior ou igual)
+9 <= 7 --> false (Menor ou igual)
+5 == 5 --> true  (igual a)
+4 != 4 --> false (diferente) 
+
+5 == 5 -> true
+
+5 == 5 -> '5' true, mesmo sendo string, ambos tem mesma grandeza.
+
+se for pra ser mais restrito quanto ao tipo utilizar ===
+
+5 === '5' -> false
+
+
+lógicos
+
+! negacao
+&& conjuncao    (caneta azul e uma vermelha)
+|| disjuncao    (caneta azul ou uma vermelha)
+
+
