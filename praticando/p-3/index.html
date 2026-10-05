@@ -15,15 +15,40 @@ div#area {
     height: 200px;
     line-height: 200px;
     text-align: center;
+
+
+    /*Eventos DOM, Eventos de mouse: mouse move, mouse doown, mouseup, mouseemter, mouseout, click*/
 };
 
 </style>
 
 <body>
-    <div id = "area">
+    <div id = "area" onclick = "clicar()" onmouseenter="entrar()" onmouseout= "sair()">
       Interaja...
     </div>
+
+<script>
+   let a = window.document.getElementById('area')
+   
+      
+   function clicar() { 
+       a.innerText = 'clicou!'
+       a.style.background = 'red'
+   }
+
+   function entrar() {
+       a.innerText = 'entrar'
+   }
+
+   function sair() {
+     a.innerText = 'saiu'
+     a.style.background = 'green'
+   }
+
+</script>
+
 </body>
 
 </body>
 </html>
+
