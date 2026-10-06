@@ -20,6 +20,13 @@ function calcular () {
 function calculandoTwo () {
     button.innerText = 'Calculando...'
     button.style.background = "yellow"
+
+
+
+ p.innerText = `Seu Salário somando de duas vezes, tera que estabelecer mais de R$ 5.000 para estar maior que a média brasileira. sendo ele ${result}`
+
+
+
 }
 
 
@@ -27,6 +34,4 @@ function calculandoTwo () {
 
 
 
-function resultado() {
-    p.innerText = `Seu Salário somando de duas vezes, tera que estabelecer mais de R$ 5.000 para estar maior que a média brasileira. sendo ele ${result}`
-}
+   
