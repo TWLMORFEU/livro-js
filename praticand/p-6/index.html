@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pais de origem</title>
 
     <style>
 
        body {
         background-color: rgb(125, 143, 152);
+        font-family: Arial, Helvetica, sans-serif;
        }
 
        h1 {
@@ -17,6 +18,11 @@
 
        p {
         font-size: 18px;
+        
+       }
+
+       p input#confirmar {
+           width: 30px;
        }
 
     </style>
@@ -26,9 +32,41 @@
     <h1>Qual sua Nacionalidade ? </h1>
 
     <p>Além da sua nacionalidade, vamos relembrar das cores da sua bandeira!</p>
+    <p>Escolha entre (Brasil, Estados-Unidos e Argentina)</p>
 
 
    <p> País: <input type="text" name="pais" id="pais"></p>
+   <p>Confirmar: <input type="button" name="confirmar" id="confirmar" onclick="Enter"></p>
     
+   <div id="resposta">
+
+
+   </div>
+
+   <script>
+
+   let txtpais = window.document.getElementById('input#pais')
+ 
+   function pais() {
+    let txtp = window.document.getElementById('input#pais')
+    let resp = window.document.getElementById('div#resposta')
+    let pais = txtp.value
+
+    resp.innerHTML = `Sua nacionalidadde então é:`
+
+    if (pais == Brasil) {
+        resp.innerHTML += `<p>Seu pais é <strong>${pais}</strong>, e a bandeira é verde, amarela, azul, e pequenos traços brancos</p>`
+    }  else if  (pais == Estados-Unidos) {
+       resp.innerHTML += `<p>Seu país é: <strong>${pais}</strong>, e a bandeira é azul, vermelha e pequenos brancos</p>`
+    } else (pais == Argentina); {
+        resp.innerHTML += `<p>Seu pais é: <strong>${pais}</strong>, e a bandeira é azul, branca e pequenos traços amarelo</p>`
+    };
+    resp.innerHTML += `Obrigado, até mais!`
+
+   
+   };
+   
+
+   </script>
 </body>
 </html>
