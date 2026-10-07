@@ -21,9 +21,15 @@
         
        }
 
-       p input#confirmar {
-           width: 30px;
-       }
+       p input {
+        background-color: rgb(120, 120, 120);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
 
     </style>
 </head>
@@ -36,7 +42,7 @@
 
 
    <p> País: <input type="text" name="pais" id="pais"></p>
-   <p>Confirmar: <input type="button" name="confirmar" id="confirmar" onclick="Enter"></p>
+   <p>Confirmar: <input type="button" value="confirmar" id="confirmar" onclick="pais()"></p>
     
    <div id="resposta">
 
@@ -45,24 +51,24 @@
 
    <script>
 
-   let txtpais = window.document.getElementById('input#pais')
+   let txtpais = window.document.getElementById('pais')
  
    function pais() {
-    let txtp = window.document.getElementById('input#pais')
-    let resp = window.document.getElementById('div#resposta')
+    let txtp = window.document.getElementById('pais')
+    let resp = window.document.getElementById('resposta')
     let pais = txtp.value
 
     resp.innerHTML = `Sua nacionalidadde então é:`
 
-    if (pais == Brasil) {
-        resp.innerHTML += `<p>Seu pais é <strong>${pais}</strong>, e a bandeira é verde, amarela, azul, e pequenos traços brancos</p>`
-    }  else if  (pais == Estados-Unidos) {
-       resp.innerHTML += `<p>Seu país é: <strong>${pais}</strong>, e a bandeira é azul, vermelha e pequenos brancos</p>`
-    } else (pais == Argentina); {
-        resp.innerHTML += `<p>Seu pais é: <strong>${pais}</strong>, e a bandeira é azul, branca e pequenos traços amarelo</p>`
-    };
-    resp.innerHTML += `Obrigado, até mais!`
-
+    if (pais == `Brasil`) {
+        resp.innerHTML = `<p>Seu pais é <strong>${pais}</strong>, e a bandeira é verde, amarela, azul, e pequenos traços brancos</p>`
+    }  else if  (pais == `Estados-Unidos`) {
+       resp.innerHTML = `<p>Seu país é: <strong>${pais}</strong>, e a bandeira é azul, vermelha e pequenos brancos</p>`
+    } else if (pais == `Argentina`); {
+        resp.innerHTML = `<p>Seu pais é: <strong>${pais}</strong>, e a bandeira é azul, branca e pequenos traços amarelo</p>`
+    } 
+       resp.innerHTML+= 'pais nao reconhecido.' 
+       resp.innerHTML += ` Obrigado, até mais!`
    
    };
    
