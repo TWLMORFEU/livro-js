@@ -1,36 +1,36 @@
+
 @charset "UTF-8";
 
 body {
-   background-color: rgb(154, 154, 248);
-   font: normal 15pt Arial;
+    background-color: rgb(154, 154, 248);
+    font: normal 15pt Arial;
 }
 
 header {
-   text-align: center;
-   color: white;
+    text-align: center;
+    color: white;
 }
 
 section {
-   background-color: rgb(251, 251, 251);
-   border-radius: 10px;
-   padding: 15px;
-   width: 500px;
-   margin: auto;
-   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
-   justify-items: center;
+    background-color: rgb(251, 251, 251);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
-div#imagem {
-    img {
+#res img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-}
+    display: block;
+    margin: 15px auto;
 }
 
 footer {
-   color: white;
-   text-align: center;
-   font-style: italic;
+    color: white;
+    text-align: center;
+    font-style: italic;
 }
