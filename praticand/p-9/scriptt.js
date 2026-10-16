@@ -4,7 +4,7 @@ function verificar() {
    let fano = document.getElementById('txtano')
    let res = document.querySelector('div#res')
 
-   if ( fano.value.length == 0 || fano.value > ano) {
+   if ( fano.value.length() == 0 || fano.value > ano) {
       window.alert('[ERRO] Verifique os dados e tente novamente!')
    } else {
       let idade = ano - Number(fano.value)
