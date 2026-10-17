@@ -9,3 +9,14 @@ function Imc(peso, altura) {
 }
 
 Imc(peso, altura)
+
+
+
+
+let pizzas = 10
+
+
+while (pizzas > 0 ) {
+    pizzas--
+   console.log('acabou uma pizza')
+}
