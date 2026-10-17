@@ -37,7 +37,7 @@ while (contador <= 10) {
 
 let num = 3
 let cont = 1
-
+let soma = 0
 while (cont <= 10) {
 
     let result = num * cont
@@ -48,7 +48,7 @@ while (cont <= 10) {
         console.log('O resultado é ímpar')
     }
 
-    let soma = soma + result
+    soma = soma + result
     cont ++
     
 }
