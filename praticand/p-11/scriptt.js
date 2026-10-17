@@ -31,3 +31,26 @@ while (contador <= 10) {
     console.log(`${numero} x ${contador} = ${numero * contador}`)
     contador++
 }
+
+
+
+
+let num = 3
+let cont = 1
+
+while (cont <= 10) {
+
+    let result = num * cont
+    console.log(`${num} x ${cont} = ${result}`)
+    if (result % 2 == 0) {
+        console.log('O resultado é par')
+    } else {
+        console.log('O resultado é ímpar')
+    }
+
+    let soma = soma + result
+    cont ++
+    
+}
+
+console.log(`A soma de todos os números multiplicados, equivalem a ${soma}`)
