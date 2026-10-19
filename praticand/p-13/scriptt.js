@@ -11,6 +11,21 @@ let resposta = document.getElementById('resposta');
 
 function contar() {
     resposta.innerHTML = 'Calculo'
-}
+};
 
-botao.addEventListener('click', contar)
+botao.addEventListener('click', contar);
+
+
+function calc() {
+  if (start === '' ) {
+    resposta.innerHTML = 'Preencha o campo inicial (Início)';
+  } else if (end === '') {
+    resposta.innerHTML = 'Preencha o campo secundário (Fim)';
+  } else if (passo === '') {
+    resposta.innerHTML = 'Preencha o campo terciário (Passo)';
+  }
+
+
+
+  
+}
