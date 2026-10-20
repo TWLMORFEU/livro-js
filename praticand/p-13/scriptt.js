@@ -32,3 +32,20 @@ function calc() {
 }
 
 botao.addEventListener('click', calc);
+
+
+
+// erros cometidos durante a realizacao do exercicio
+
+
+/*
+
+botao chamando funcao errada
+
+ids do js nao correspondiam ao html
+
+comparacao com numeros e string vazias
+
+o incremento no for estava incorreto
+
+*/
