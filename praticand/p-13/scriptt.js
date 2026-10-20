@@ -1,31 +1,34 @@
+let botao = document.getElementById('botao');
+let resposta = document.getElementById('res');
+
+
 let st = document.getElementById('inicio');
 let en = document.getElementById('fim');
-let ps = document.getElementById('passo')
-
-let start = st.value;
-let end = en.value;
-let passo = ps.value;
-
-let botao = document.getElementById('botao');
-let resposta = document.getElementById('resposta');
-
-function contar() {
-    resposta.innerHTML = 'Calculo'
-};
-
-botao.addEventListener('click', contar);
-
+let ps = document.getElementById('passo');
 
 function calc() {
-  if (start === '' ) {
+
+  let start = Number(st.value);
+  let end = Number(en.value);
+  let passo = Number(ps.value);
+
+  if (st.value=== '' ) {
     resposta.innerHTML = 'Preencha o campo inicial (Início)';
-  } else if (end === '') {
+  } else if (en.value === '') {
     resposta.innerHTML = 'Preencha o campo secundário (Fim)';
-  } else if (passo === '') {
+  } else if (ps.value === '') {
     resposta.innerHTML = 'Preencha o campo terciário (Passo)';
+  } else if ( passo <= 0) {
+    resposta.innerHTML = 'O passo deve ser maior que zero'
+  } else {
+    resposta.innerHTML = 'Contando: <br>'
+
+    for (let Start = start; Start <= end; Start += passo) {
+    resposta.innerHTML += `${Start} 👉 `;
+    }
+    resposta.innerHTML+= `🏁`
   }
-
-
-
   
 }
+
+botao.addEventListener('click', calc);
