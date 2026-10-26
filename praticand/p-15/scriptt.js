@@ -25,5 +25,9 @@ let numss = [2, 4, 6, 9, 5,  3, 1]
 
 // inicio 0,      vai repetir ate completar o tamanho total
 for (let pos=0; pos<numss.length;pos++) {
-     console.log(numss[pos])
+    console.log(numss[pos])
 };
+
+for(let pos in numss) {    // modo simplificado que so funciona para arrays e objetos
+    console.log(numss[pos])
+}
