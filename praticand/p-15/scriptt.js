@@ -14,5 +14,5 @@ num[3] = 6
 console.log(num[2])
 
 num.push(8) // adiciona a ultima colocacao
-num.sort()
+num.sort()  // Coloca os valores dos indices em ordem crescente
 num.length()  // Quantidade de elementos/ indices que tem o array
