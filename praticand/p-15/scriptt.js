@@ -31,3 +31,6 @@ for (let pos=0; pos<numss.length;pos++) {
 for(let pos in numss) {    // modo simplificado que so funciona para arrays e objetos
     console.log(numss[pos])
 }
+
+
+numss.indexOf(4) // retorna o indice que se encontra o valor, se aparecer -1, nao foi encontrado
