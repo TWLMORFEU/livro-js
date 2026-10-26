@@ -15,4 +15,15 @@ console.log(num[2])
 
 num.push(8) // adiciona a ultima colocacao
 num.sort()  // Coloca os valores dos indices em ordem crescente
-num.length()  // Quantidade de elementos/ indices que tem o array
+num.length  // Quantidade de elementos/ indices que tem o array
+
+
+
+
+let numss = [2, 4, 6, 9, 5,  3, 1]
+
+
+// inicio 0,      vai repetir ate completar o tamanho total
+for (let pos=0; pos<numss.length;pos++) {
+     console.log(numss[pos])
+};
