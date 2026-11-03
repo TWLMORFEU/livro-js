@@ -27,3 +27,17 @@ function parimpp(nn) {
 }
 
 console.log(parimpp(44))
+
+
+let v = function(x) {
+    return x*2
+}
+
+console.log(v(5))
+
+
+
+function fatorial(n) {
+    let fat = 1 
+    for ()
+}
