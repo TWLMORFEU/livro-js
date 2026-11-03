@@ -14,3 +14,16 @@ function parimp(n) {
 
 
 parimp(55)
+ 
+
+// ou tambem 
+
+function parimpp(nn) {
+    if (nn%2==0) {
+        return 'Par'
+    } else {
+        return 'impar'
+    };
+}
+
+console.log(parimpp(44))
