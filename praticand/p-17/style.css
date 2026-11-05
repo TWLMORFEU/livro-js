@@ -11,6 +11,8 @@ header {
    color: white;
 }
 
+
+
 section{
    background-color: rgb(251, 251, 251);
    border-radius: 10px;
@@ -34,6 +36,13 @@ button {
    width: 5vw;
 }
 
+textarea#texta {
+    width: 40vh;
+    height: 100px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
 div#res p {
    font-size: medium;
    padding: 4px;
@@ -47,4 +56,5 @@ footer {
    color: white;
    text-align: center;
    font-style: italic;
+   margin-top: 20px;
 }
