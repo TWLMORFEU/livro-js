@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+   background-color: rgb(154, 154, 248);
+   font: normal 15pt Arial;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+   text-align: center;
+   color: white;
+}
+
+section{
+   background-color: rgb(251, 251, 251);
+   border-radius: 10px;
+   padding: 25px;
+   width: 500px;
+   margin: auto;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+   justify-items: left;
+}
+
+#msg {
+   input {
+      margin-bottom: 20px;
+   }
+}
+
+button {
+   padding: 4px;
+   border: 2px, solid, black;
+   border-radius: 3px;
+   width: 5vw;
+}
+
+div#res p {
+   font-size: medium;
+   padding: 4px;
+   border-radius: 3px;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+   justify-items: left;
+}
+
+
+footer {
+   color: white;
+   text-align: center;
+   font-style: italic;
+}
