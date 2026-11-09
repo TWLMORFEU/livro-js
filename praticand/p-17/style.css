@@ -29,6 +29,10 @@ section{
    }
 }
 
+select {
+   width: 150px;
+}
+
 button {
    padding: 4px;
    border: 2px, solid, black;
